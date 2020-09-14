@@ -22,7 +22,7 @@ This is the reason why we have to take this course remotely. The question we all
 
 ## Are we there yet?
 
-![](C:\Users\fine_\Documents\Kurse\STA426_HS2020/picture_coronapandemia.png)
+![](https://github.com/JosefineRuder/STA426_HS2020_JR/blob/master/picture_coronapandemia.PNG)
 
 ***
 
