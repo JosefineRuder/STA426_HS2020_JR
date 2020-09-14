@@ -1,13 +1,3 @@
----
-title: "STA426_Exercise_1a"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-library(readxl)
-library(ggplot2)
-```
 
 ***
 
