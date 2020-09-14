@@ -31,7 +31,8 @@ This is the reason why we have to take this course remotely. The question we all
 
 ```{r graph corona}
 
-corona_data <- read_excel("~/Kurse/STA426_HS2020/200325_Datengrundlage_Grafiken_COVID-19-Bericht.xlsx",  range = "A7:B208", col_names = TRUE)
+corona_data <- read_excel("~/Kurse/STA426_HS2020/200325_Datengrundlage_Grafiken_COVID-19-Bericht.xlsx",  
+                          range = "A7:B208", col_names = TRUE)
 
 ggplot(corona_data, aes(x= Datum, y= `Fallzahlen pro Tag`))+
   geom_point() +
