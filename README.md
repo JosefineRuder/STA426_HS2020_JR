@@ -43,7 +43,7 @@ So the answer is *nope*, we are not there yet, second wave welcome.
 
 ***
 
-##Advantages and Disadvantages of this Crisis
+## Advantages and Disadvantages of this Crisis
 
 
 Negative aspects | Positive aspects
