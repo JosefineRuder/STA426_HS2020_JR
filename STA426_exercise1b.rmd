@@ -1,0 +1,62 @@
+---
+title: "STA426_Exercise_1b"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(readxl)
+library(ggplot2)
+library(stats)
+```
+
+***
+
+## Exercise 1b Log-Normal Distributions
+
+Let's study log-normal distributions today! The log-normal distribution is a continuous probability distribution of a random variable whose logarithm is normally distributed and takes only positive real values.
+
+First, let's sample 100 values from a log-normally distributed variable and study the mean and the variance of our sample.
+
+```{r sample}
+
+sample <-as.data.frame(rlnorm(100, meanlog = 1, sdlog = 0.25))
+
+colnames(sample) <- "value"
+
+mean(sample$value)
+var(sample$value)
+
+
+```
+
+Nice, now we have our data frame with 100 samples from a log-normal distributed variable with a mean of `r mean(sample$value)` and a variance of `r var(sample$value)`.
+
+Now let's plot our sample as a histogram to visualise it.
+
+
+```{r histogram}
+
+ggplot(data=sample, aes(value)) + 
+  geom_histogram(bins = 20)+
+  theme_bw()
+
+```
+
+
+The hitogram is not really symmetric, it's kind of leaning to the left. 
+How does it look like, if we plot it on a logarithmic x axis?
+
+
+```{r log histogram}
+
+ggplot(data=sample, aes(value)) + 
+  geom_histogram(bins = 20)+
+  scale_x_log10()+
+  theme_bw()
+
+```
+
+Ah, that looks very much like a normal distribution, how nice.
+
+
