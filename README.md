@@ -8,7 +8,7 @@ Check out the recent data on the **covid19 pandemic** in switzerland here:
 [Swiss Corona Data](https://www.corona-data.ch/>)
 
 This is the reason why we have to take this course remotely. The question we all have in mind....
-
+Hello this is Cedric
 
 ## Are we there yet?
 
